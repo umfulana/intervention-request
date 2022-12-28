@@ -68,8 +68,7 @@ class FileCache implements EventSubscriberInterface
         int $gcProbability = 300,
         bool $useFileChecksum = false
     ) {
-        $cachePath = realpath($cachePath);
-        if (false === $cachePath) {
+         if (false === is_dir($cachePath)) {
             throw new \InvalidArgumentException($cachePath . ' path does not exist.');
         }
         $this->cachePath = $cachePath;
