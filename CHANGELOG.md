@@ -1,3 +1,31 @@
+## [v4.0.1](https://github.com/ambroisemaupate/intervention-request/compare/v4.0.0...v) (2023-02-10)
+
+### Bug Fixes
+
+* Updated README constructor examples ([531f7db](https://github.com/ambroisemaupate/intervention-request/commit/531f7dbd76d31739a9d5ef0c842d1cc8b2fad9dc))
+
+## [v4.0.0](https://github.com/ambroisemaupate/intervention-request/compare/v3.3.4...v) (2023-02-10)
+
+### ⚠ BREAKING CHANGES
+
+* Requires php80 minimum
+* `InterventionRequest` constructor signature changed:
+    It requires now 2 objects:
+
+    - AM\InterventionRequest\Configuration
+    - AM\InterventionRequest\FileResolverInterface
+
+### Features
+
+* Added FileResolverInterface to make native file loading abstract ([7a86ca0](https://github.com/ambroisemaupate/intervention-request/commit/7a86ca0e0b395b43db836f157449926b0f64458f))
+* Added Flysystem file resolver ([1eef862](https://github.com/ambroisemaupate/intervention-request/commit/1eef862640c34aeceb1a1a242d340e53b3ed2aad))
+* Added Flysystem storage abstract and cache system ([3e8e583](https://github.com/ambroisemaupate/intervention-request/commit/3e8e583074cce63aabdd667e22332a55ba1bc448))
+* Requires php80 minimum ([8c74872](https://github.com/ambroisemaupate/intervention-request/commit/8c7487210af7765bd98c21c342d9b56aa2b937a1))
+
+### Bug Fixes
+
+* Return null if no filesystem is configured ([4c2147d](https://github.com/ambroisemaupate/intervention-request/commit/4c2147d26a0fc20bead32bfb1a22ed9938f49375))
+
 ## [v3.3.4](https://github.com/ambroisemaupate/intervention-request/compare/v3.3.3...v3.3.4) (2022-11-10)
 
 ### Bug Fixes
